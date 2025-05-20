@@ -25,48 +25,25 @@
       <div class="container">
         <h2 class="text-center mb-5">Our Services</h2>
         <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <div class="services-icon">
-                  <i class="bi bi-search"></i>
-                </div>
-                <h4>SEO Optimization</h4>
-                <p>
-                  Boost your search rankings and drive organic traffic with our
-                  expert SEO strategies.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <div class="services-icon">
-                  <i class="bi bi-share"></i>
-                </div>
-                <h4>Social Media Marketing</h4>
-                <p>
-                  Engage your audience and build brand awareness across all
-                  social platforms.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <div class="services-icon">
-                  <i class="bi bi-graph-up"></i>
-                </div>
-                <h4>PPC Advertising</h4>
-                <p>
-                  Maximize ROI with targeted pay-per-click campaigns that
-                  convert.
-                </p>
-              </div>
-            </div>
-          </div>
+
+          @include("layouts.parts.indexservice", [
+            "icon" => "bi-search",
+            "title" => "SEO Optimization",
+            "desc" => "Boost your search rankings and drive organic traffic with our expert SEO strategies."
+            ])
+
+          @include("layouts.parts.indexservice", [
+            "icon" => "bi-share",
+            "title" => "Social Media Marketing",
+            "desc" => "Engage your audience and build brand awareness across all social platforms."
+            ])
+
+          @include("layouts.parts.indexservice", [
+            "icon" => "bi-graph-up",
+            "title" => "PPC Advertising",
+            "desc" => "Maximize ROI with targeted pay-per-click campaigns that convert."
+            ])
+
         </div>
       </div>
     </section>

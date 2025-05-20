@@ -14,7 +14,9 @@
     <section class="py-5">
       <div class="container">
 
-        @include("layouts.parts.servicerow1", [
+        @include("layouts.parts.servicerow", [
+            "order1" => "order-lg-1",
+            "order2" => "order-lg-2",
             "title" => "Search Engine Optimization (SEO)",
             "text" => "Our SEO services help your business rank higher in search results and attract more organic traffic.",
             "list1" => "Keyword Research & Strategy",
@@ -25,7 +27,9 @@
             "list6" => "Monthly Reporting & Analytics"
             ])
 
-        @include("layouts.parts.servicerow2", [
+        @include("layouts.parts.servicerow", [
+            "order1" => "order-lg-2",
+            "order2" => "order-lg-1",
             "title" => "Social Media Marketing",
             "text" => "Build your brand presence and engage with your audience across all major social platforms.",
             "list1" => "Social Media Strategy Development",
@@ -36,7 +40,9 @@
             "list6" => "Performance Analytics"
             ])
 
-        @include("layouts.parts.servicerow1", [
+        @include("layouts.parts.servicerow", [
+            "order1" => "order-lg-1",
+            "order2" => "order-lg-2",
             "title" => "Pay-Per-Click (PPC) Advertising",
             "text" => "Maximize your ROI with targeted advertising campaigns that drive conversions.",
             "list1" => "Google Ads Management",
@@ -47,7 +53,9 @@
             "list6" => "A/B Testing & Optimization"
             ])
 
-        @include("layouts.parts.servicerow2", [
+        @include("layouts.parts.servicerow", [
+            "order1" => "order-lg-2",
+            "order2" => "order-lg-1",
             "title" => "Content Marketing",
             "text" => "Create compelling content that attracts, engages, and converts your target audience.",
             "list1" => "Content Strategy Development",
@@ -58,6 +66,8 @@
             "list6" => "Content Distribution"
             ])
 
+        </div>
+    </section>
 
     @include("layouts.parts.ctasection", [
         "title" => "Ready to Boost Your Online Presence?",

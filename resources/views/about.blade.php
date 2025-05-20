@@ -117,36 +117,31 @@
       <div class="container">
         <h2 class="text-center mb-5">Our Achievements</h2>
         <div class="row text-center">
-
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-trophy display-4 text-primary"></i>
-              <h3 class="mt-3">500+</h3>
-              <p>Happy Clients</p>
-            </div>
-          </div>
           
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-graph-up display-4 text-primary"></i>
-              <h3 class="mt-3">150%</h3>
-              <p>Average ROI</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-award display-4 text-primary"></i>
-              <h3 class="mt-3">25+</h3>
-              <p>Industry Awards</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-people display-4 text-primary"></i>
-              <h3 class="mt-3">50+</h3>
-              <p>Team Members</p>
-            </div>
-          </div>
+          @include("layouts.parts.achievement", [
+            "icon" => "bi-trophy",
+            "number" => "500+",
+            "text" => "Happy Clients"
+            ])
+            
+          @include("layouts.parts.achievement", [
+            "icon" => "bi-graph-up",
+            "number" => "150%",
+            "text" => "Average ROI"
+            ])
+
+          @include("layouts.parts.achievement", [
+            "icon" => "bi-award",
+            "number" => "25+",
+            "text" => "Industry Awards"
+            ])
+
+          @include("layouts.parts.achievement", [
+            "icon" => "bi-people",
+            "number" => "50+",
+            "text" => "Team Members"
+            ])
+
         </div>
       </div>
     </section>

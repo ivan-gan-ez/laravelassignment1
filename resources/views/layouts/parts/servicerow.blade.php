@@ -1,12 +1,12 @@
         <div class="row mb-5">
-          <div class="col-lg-6">
+          <div class="col-lg-6 {{$order1}}">
             <img
               src="https://placehold.co/600x400"
               class="img-fluid rounded shadow"
               alt="SEO Services"
             />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 {{$order2}}">
             <h3 class="mb-3">{{$title}}</h3>
             <p>
               {{$text}}
