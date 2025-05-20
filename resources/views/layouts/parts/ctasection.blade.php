@@ -5,6 +5,6 @@
         <p class="lead mb-4">
           {{$text}}
         </p>
-        <a href="contact.html" class="btn btn-light btn-lg">{{$buttontext}}</a>
+        <a href="/contact" class="btn btn-light btn-lg">{{$buttontext}}</a>
       </div>
     </section>

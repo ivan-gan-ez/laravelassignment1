@@ -555,6 +555,11 @@ footer a:hover {
     overflow: hidden;
 }
 
+.bg-primary .container {
+    position: relative;
+    z-index: 1;
+}
+
 .bg-primary::before {
     content: "";
     position: absolute;

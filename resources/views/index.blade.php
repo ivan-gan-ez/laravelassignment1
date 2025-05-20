@@ -1,5 +1,9 @@
 @extends("layouts.page")
 
+@include("layouts.parts.nav",[
+    "active" => "home"
+])
+
 @section("content")
 
     <!-- Hero Section -->
@@ -9,10 +13,10 @@
           <div class="col-lg-12">
             <h1 class="display-3 fw-bold mb-4">Welcome to MarketPro Agency</h1>
             <p class="lead mb-5">Your Partner in Digital Growth and Success</p>
-            <a href="services.html" class="btn btn-primary btn-lg me-3"
+            <a href="/services" class="btn btn-primary btn-lg me-3"
               >Our Services</a
             >
-            <a href="contact.html" class="btn btn-outline-light btn-lg"
+            <a href="/contact" class="btn btn-outline-light btn-lg"
               >Get Started</a
             >
           </div>

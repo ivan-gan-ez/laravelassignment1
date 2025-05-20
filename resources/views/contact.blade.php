@@ -1,5 +1,9 @@
 @extends("layouts.page")
 
+@include("layouts.parts.nav",[
+    "active" => "contact"
+])
+
 @section("content")
 
     <!-- Page Header -->

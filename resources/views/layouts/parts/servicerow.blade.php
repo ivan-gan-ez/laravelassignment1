@@ -19,6 +19,6 @@
               <li>{{$list5}}</li>
               <li>{{$list6}}</li>
             </ul>
-            <a href="contact.html" class="btn btn-primary">Get Started</a>
+            <a href="/contact" class="btn btn-primary">Get Started</a>
           </div>
         </div>
